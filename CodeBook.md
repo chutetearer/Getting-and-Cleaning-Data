@@ -16,7 +16,6 @@ activityrecognition@smartlab.ws
 www.smartlab.ws
 
 **License:**
-
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz.
 Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine.
 International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
@@ -39,7 +38,8 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 |**Total**   |563         | 7352       | 2947       | 10299      |
 
 ---  
-  
+
+
 #### tidyData.txt columns/values:
 
 For a detailed explanation of how the tidyData.txt data was extracted and processed, please refer to the README.md document available in this repository.
@@ -48,17 +48,17 @@ tidyData.txt is composed of 180 rows/observations and 68 columns/values.
 
 The following column names were kept from the original data source except for "activity" and "subject", and the values represent the means of the original data grouped by "activity" and "subject".
 
-##### Column name: "activity"
+##### Column name: **"activity"**
 - Column number: 1
 - Column type: Factor
 - Values: "WALKING", "WALKING_UPSTAIRS" ,"WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
 
-##### Column name: "subject"
+##### Column name: **"subject"**
 - Column number: 2
 - Column type: Factor
 - Values: 30 subjects enumerated from "1" to "30"
 
-##### Column name: "tBodyAcc-mean()-X" to "fBodyBodyGyroJerkMag-std()"
+##### Column name: **"tBodyAcc-mean()-X"** to **"fBodyBodyGyroJerkMag-std()"**
 - Column number: 3 to 68
 - Column type: Numeric
 - Values: Mean value of column grouped by "activity" and "subject"
@@ -77,16 +77,16 @@ The following column names were kept from the original data source except for "a
   - [33] "tBodyAccMag-mean()", "tBodyAccMag-std()", "tGravityAccMag-mean()" 
   - [36] "tGravityAccMag-std()", "tBodyAccJerkMag-mean()", "tBodyAccJerkMag-std()" 
   - [39] "tBodyGyroMag-mean()", "tBodyGyroMag-std()", "tBodyGyroJerkMag-mean()" 
-  - [40] "tBodyGyroJerkMag-std()"
-  - [41] "fBodyAcc-mean()-X", "fBodyAcc-mean()-Y", "fBodyAcc-mean()-Z" 
-  - [44] "fBodyAcc-std()-X", "fBodyAcc-std()-Y", "fBodyAcc-std()-Z" 
-  - [47] "fBodyAccJerk-mean()-X", "fBodyAccJerk-mean()-Y", "fBodyAccJerk-mean()-Z" 
-  - [50] "fBodyAccJerk-std()-X", "fBodyAccJerk-std()-Y", "fBodyAccJerk-std()-Z" 
-  - [53] "fBodyGyro-mean()-X", "fBodyGyro-mean()-Y", "fBodyGyro-mean()-Z" 
-  - [56] "fBodyGyro-std()-X", "fBodyGyro-std()-Y", "fBodyGyro-std()-Z" 
-  - [59] "fBodyAccMag-mean()", "fBodyAccMag-std()", "fBodyBodyAccJerkMag-mean()" 
-  - [62] "fBodyBodyAccJerkMag-std()", "fBodyBodyGyroMag-mean()", "fBodyBodyGyroMag-std()" 
-  - [65] "fBodyBodyGyroJerkMag-mean()", "fBodyBodyGyroJerkMag-std()"
+  - [42] "tBodyGyroJerkMag-std()"
+  - [43] "fBodyAcc-mean()-X", "fBodyAcc-mean()-Y", "fBodyAcc-mean()-Z" 
+  - [46] "fBodyAcc-std()-X", "fBodyAcc-std()-Y", "fBodyAcc-std()-Z" 
+  - [49] "fBodyAccJerk-mean()-X", "fBodyAccJerk-mean()-Y", "fBodyAccJerk-mean()-Z" 
+  - [52] "fBodyAccJerk-std()-X", "fBodyAccJerk-std()-Y", "fBodyAccJerk-std()-Z" 
+  - [55] "fBodyGyro-mean()-X", "fBodyGyro-mean()-Y", "fBodyGyro-mean()-Z" 
+  - [58] "fBodyGyro-std()-X", "fBodyGyro-std()-Y", "fBodyGyro-std()-Z" 
+  - [61] "fBodyAccMag-mean()", "fBodyAccMag-std()", "fBodyBodyAccJerkMag-mean()" 
+  - [64] "fBodyBodyAccJerkMag-std()", "fBodyBodyGyroMag-mean()", "fBodyBodyGyroMag-std()" 
+  - [67] "fBodyBodyGyroJerkMag-mean()", "fBodyBodyGyroJerkMag-std()"
 
 (1) The "t" and "f" prefix of the column names specifies if the values were calculated
 from the time or frequency domain.
