@@ -26,16 +26,14 @@ The directory "UCI HAR Dataset" will be considered the working directory as of n
 
 Other files and directories will be present but are not needed for the present assignment.
 
-The recommended order of steps for generating the tidyData.txt file were:
-
-You should create one R script called run_analysis.R that does the following: 
+**The recommended order of steps for generating the tidyData.txt file were: You should create one R script called run_analysis.R that does the following:**
 - Merges the training and the test sets to create one data set.
 - Extracts only the measurements on the mean and standard deviation for each measurement. 
 - Uses descriptive activity names to name the activities in the data set
 - Appropriately labels the data set with descriptive variable names. 
 - From the data set in the previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-A slightly different order has been applied here:
+**A slightly different order has been applied here:**
 - Read subject_train and subject_test data
   - train <- read.table("train/subject_train.txt")
   - test <- read.table("test/subject_test.txt")
@@ -98,3 +96,7 @@ A slightly different order has been applied here:
   - tidyData <- tidyData[order(tidyData$activity, as.numeric(as.character(tidyData$subject))),]
 - Write resulting data frame to tidyData.txt
   - write.table(tidyData, file="tidyData.txt", row.names=FALSE)
+
+**In order to correctly visualize tidyData.txt, it is suggested to follow the procedure described below:**
+- data <- read.table("tidyData.txt", header = TRUE)
+- View(data)
