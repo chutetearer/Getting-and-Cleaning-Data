@@ -79,9 +79,8 @@ The following column names were kept from the original data source except for "a
 from the time or frequency domain.
 (2) Only column names containing "std()" and "mean()" have been kept, following the assignment requirements.
 
-|            |Total       | Train      | Test       | Total      |
 
-| Content    |Columns     | Obs        | Obs        | Obs        |
+| Content    |Columns     | Train Obs.  | Test Obs.   | Total Obs.|
 |:----------:|:----------:|:----------:|:----------:|:----------:|
 |subject     |1           | 7352       | 2947       | 10299      |
 |activity    |1           | 7352       | 2947       | 10299      |
