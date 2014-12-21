@@ -78,3 +78,9 @@ The following column names were kept from the original data source except for "a
 (1) The "t" and "f" prefix of the column names specifies if the values were calculated
 from the time or frequency domain.
 (2) Only column names containing "std()" and "mean()" have been kept, following the assignment requirements.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
