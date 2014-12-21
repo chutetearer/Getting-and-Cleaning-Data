@@ -39,6 +39,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ---  
 
+** **
 
 #### tidyData.txt columns/values:
 
