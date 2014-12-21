@@ -86,7 +86,7 @@ test <- cbind(test, testD)
 ## into allData data frame
 allData <- rbind(test, train)
 
-## calculate means grouped by activity and subject 
+## calculate means grouped by activity and subject
 ## and sort the result by activity and subject
 tidyData <- aggregate(allData[,3:68], by=list(activity=allData$activity, subject=allData$subject), mean)
 tidyData <- tidyData[order(tidyData$activity, as.numeric(as.character(tidyData$subject))),]
