@@ -26,6 +26,14 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 For additional information about the original data, please refer to:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+##### Summary of the original data
+
+| Content    |Columns     | Train Obs. | Test Obs.  | Total Obs. |
+|:----------:|:----------:|:----------:|:----------:|:----------:|
+|subject     |1           | 7352       | 2947       | 10299      |
+|activity    |1           | 7352       | 2947       | 10299      |
+|features    |561         | 7352       | 2947       | 10299      |
+
 
 #### tidyData.txt columns/values:
 
@@ -79,9 +87,3 @@ The following column names were kept from the original data source except for "a
 from the time or frequency domain.
 (2) Only column names containing "std()" and "mean()" have been kept, following the assignment requirements.
 
-
-| Content    |Columns     | Train Obs.  | Test Obs.   | Total Obs.|
-|:----------:|:----------:|:----------:|:----------:|:----------:|
-|subject     |1           | 7352       | 2947       | 10299      |
-|activity    |1           | 7352       | 2947       | 10299      |
-|features    |561         | 7352       | 2947       | 10299      |
