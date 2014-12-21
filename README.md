@@ -1,2 +1,5 @@
-Getting-and-Cleaning-Data
-=========================
+# Getting-and-Cleaning-Data
+# =========================
+
+Here will come the script documentation as the codebook for the data
+
