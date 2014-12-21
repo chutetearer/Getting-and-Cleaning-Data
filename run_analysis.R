@@ -61,7 +61,7 @@ train$activity <- as.factor(train$activity)
 train$subject <- as.factor(train$subject)
 train$activ <- NULL
 
-## read X_train and X_test activity data
+## read X_train and X_test feature data
 trainD <- read.table("train/X_train.txt")
 testD <- read.table("test/X_test.txt")
 
