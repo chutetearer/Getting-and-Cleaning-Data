@@ -1,6 +1,7 @@
 ### Codebook for tidyData.txt
 
 
+
 #### Original data source:
 
 The raw data for this assignment originated from:
@@ -25,6 +26,9 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 For additional information about the original data, please refer to:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+
+
 
 #### tidyData.txt columns/values:
 
