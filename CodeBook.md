@@ -51,7 +51,7 @@ The following columns were kept from the original data source but, except for "a
 - Column number: 3 to 68
 - Column type: Numeric
 - Values: Mean value of column grouped by "activity" and "subject"
-- Complete column names:
+- Complete column names (1):
   - "tBodyAcc-mean()-X", "tBodyAcc-mean()-Y", "tBodyAcc-mean()-Z"
   - "tBodyAcc-std()-X", "tBodyAcc-std()-Y", "tBodyAcc-std()-Z"
   - "tGravityAcc-mean()-X", "tGravityAcc-mean()-Y", "tGravityAcc-mean()-Z"
@@ -75,6 +75,7 @@ The following columns were kept from the original data source but, except for "a
   - "fBodyAccMag-mean()", "fBodyAccMag-std()", "fBodyBodyAccJerkMag-mean()" 
   - "fBodyBodyAccJerkMag-std()", "fBodyBodyGyroMag-mean()", "fBodyBodyGyroMag-std()" 
   - "fBodyBodyGyroJerkMag-mean()", "fBodyBodyGyroJerkMag-std()"
+- Units: Every variable has been normalised into a -1 to 1 range, so the units are meaningless.
 
-Every variable has been normalised into a -1 to 1 range, and when you normalise. The units go.
-from the time and frequency domain
+(1) The "t" and "f" prefix of the column names specifies if the values were calculated
+from the time or frequency domain.
