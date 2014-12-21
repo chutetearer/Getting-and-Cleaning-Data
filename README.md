@@ -117,8 +117,8 @@ Other files and directories will be present but are not needed for the present a
 ***
 
 **In order to easily visualize tidyData.txt, it is suggested to follow the procedure described below:**
-- data <- read.table("tidyData.txt", header = TRUE)
-- View(data)
+- tidyData <- read.table("tidyData.txt", header = TRUE)
+- View(tidyData)
 
 Please consult run_analysis.R in this repository for the complete source code of the R script.
 
