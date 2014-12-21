@@ -27,6 +27,8 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 For additional information about the original data, please refer to:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+---
+
 ##### Summary of the original data:
 
 | Content    |Columns     | Train Obs. | Test Obs.  | Total Obs. |
@@ -36,7 +38,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 |features    |561         | 7352       | 2947       | 10299      |
 |**Total**   |563         | 7352       | 2947       | 10299      |
 
-  
+---  
   
 #### tidyData.txt columns/values:
 
