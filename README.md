@@ -1,4 +1,4 @@
-### README.MD - Getting-and-Cleaning-Data
+### README.md - Getting-and-Cleaning-Data
 
 Included files in this repository are:
 
