@@ -1,5 +1,6 @@
 ### Codebook for tidyData.txt
 
+---
 
 #### Original data source:
 
@@ -37,11 +38,11 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 |features    |561         | 7352       | 2947       | 10299      |
 |**Total**   |563         | 7352       | 2947       | 10299      |
 
-_  
 
-** **
 
 #### tidyData.txt columns/values:
+
+---
 
 For a detailed explanation of how the tidyData.txt data was extracted and processed, please refer to the README.md document available in this repository.
 
