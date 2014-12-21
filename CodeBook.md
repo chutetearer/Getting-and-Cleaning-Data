@@ -37,7 +37,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 |features    |561         | 7352       | 2947       | 10299      |
 |**Total**   |563         | 7352       | 2947       | 10299      |
 
----  
+_  
 
 ** **
 
