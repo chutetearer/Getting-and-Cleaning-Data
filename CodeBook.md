@@ -80,6 +80,7 @@ from the time or frequency domain.
 (2) Only column names containing "std()" and "mean()" have been kept, following the assignment requirements.
 
 |            |Total       | Train      | Test       | Total      |
+
 | Content    |Columns     | Obs        | Obs        | Obs        |
 |:----------:|:----------:|:----------:|:----------:|:----------:|
 |subject     |1           | 7352       | 2947       | 10299      |
