@@ -51,12 +51,11 @@ The following columns were kept from the original data source but, except for "a
 - Column number: 3 to 68
 - Column type: Numeric
 - Values/Units: Mean value of column grouped by "activity" and "subject"
+- Complete column names:
+  - "tBodyAcc-mean()-X", "tBodyAcc-mean()-Y", "tBodyAcc-mean()-Z"
+  - "tBodyAcc-std()-X", "tBodyAcc-std()-Y", "tBodyAcc-std()-Z"
+  - "tGravityAcc-mean()-X", "tGravityAcc-mean()-Y", "tGravityAcc-mean()-Z"
 
-
-
-"tBodyAcc-mean()-X", "tBodyAcc-mean()-Y", "tBodyAcc-mean()-Z"
-"tBodyAcc-std()-X", "tBodyAcc-std()-Y", "tBodyAcc-std()-Z"
-"tGravityAcc-mean()-X", "tGravityAcc-mean()-Y", "tGravityAcc-mean()-Z"
 "tGravityAcc-std()-X" 
 "tGravityAcc-std()-Y" 
 "tGravityAcc-std()-Z" 
