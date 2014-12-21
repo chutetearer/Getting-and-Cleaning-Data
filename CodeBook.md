@@ -1,7 +1,6 @@
 ### Codebook for tidyData.txt
 
 
-
 #### Original data source:
 
 The raw data for this assignment originated from:
@@ -28,8 +27,6 @@ For additional information about the original data, please refer to:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 
-
-
 #### tidyData.txt columns/values:
 
 For a detailed explanation of how the tidyData.txt data was extracted and processed,
@@ -37,6 +34,17 @@ please refer to the README.md document available in this repository.
 
 The following columns were kept from the original data source but, except for "activity" and
 "subject", the values represent the means of the original data grouped by "activity" and "subject".
+
+##### Column name: "activity"
+- Column number: 1
+- Column type: Factor
+- Values/Units: "WALKING", "WALKING_UPSTAIRS" ,"WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"
+
+##### Column name: "subject"
+- Column number: 2
+- Column type: Factor
+- Values/Units: 30 subjects enumerated from "1" to "30"
+
 
 column name                 type            possible values and units
 
