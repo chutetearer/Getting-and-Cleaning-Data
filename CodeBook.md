@@ -29,13 +29,11 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 #### tidyData.txt columns/values:
 
-For a detailed explanation of how the tidyData.txt data was extracted and processed,
-please refer to the README.md document available in this repository.
+For a detailed explanation of how the tidyData.txt data was extracted and processed, please refer to the README.md document available in this repository.
 
 tidyData.txt is composed of 180 rows/observations and 68 columns/values.
 
-The following columns were kept from the original data source but, except for "activity" and
-"subject", the values represent the means of the original data grouped by "activity" and "subject".
+The following column names were kept from the original data source except for "activity" and "subject", and the values represent the means of the original data grouped by "activity" and "subject".
 
 ##### Column name: "activity"
 - Column number: 1
@@ -51,6 +49,7 @@ The following columns were kept from the original data source but, except for "a
 - Column number: 3 to 68
 - Column type: Numeric
 - Values: Mean value of column grouped by "activity" and "subject"
+- Units: Every original variable has been normalised into a -1 to 1 range, so the units are meaningless.
 - Complete column names (1) (2):
   - "tBodyAcc-mean()-X", "tBodyAcc-mean()-Y", "tBodyAcc-mean()-Z"
   - "tBodyAcc-std()-X", "tBodyAcc-std()-Y", "tBodyAcc-std()-Z"
@@ -75,8 +74,7 @@ The following columns were kept from the original data source but, except for "a
   - "fBodyAccMag-mean()", "fBodyAccMag-std()", "fBodyBodyAccJerkMag-mean()" 
   - "fBodyBodyAccJerkMag-std()", "fBodyBodyGyroMag-mean()", "fBodyBodyGyroMag-std()" 
   - "fBodyBodyGyroJerkMag-mean()", "fBodyBodyGyroJerkMag-std()"
-- Units: Every original variable has been normalised into a -1 to 1 range, so the units are meaningless.
 
 (1) The "t" and "f" prefix of the column names specifies if the values were calculated
 from the time or frequency domain.
-(2) Only the columns with names containing "std()" and "mean()" have been kept, following the assignment requirements.
+(2) Only column names containing "std()" and "mean()" have been kept, following the assignment requirements.
