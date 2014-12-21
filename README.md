@@ -1,11 +1,14 @@
 ### README.md - Getting-and-Cleaning-Data
 
+***
+
 Included files in this repository are:
 
 - README.md - script description (this file)
 - CodeBook.md - tidyData.txt data set description
 - run_analysis.R - collection of R commands
 
+***
 
 #### Applied procedure to generate tidyData.txt
 
@@ -25,6 +28,8 @@ The directory "UCI HAR Dataset" is considered the working directory as of now. T
 
 Other files and directories will be present but are not needed for the present assignment.
 
+***
+
 **The recommended order of steps for generating the tidyData.txt file were:**
 - Merges the training and the test sets to create one data set.
 - Extracts only the measurements on the mean and standard deviation for each measurement. 
@@ -32,6 +37,7 @@ Other files and directories will be present but are not needed for the present a
 - Appropriately labels the data set with descriptive variable names. 
 - From the data set in the previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+***
 
 **A slightly different order has been applied here:**
 - Training and test data sets were kept separate for as long as possible.
@@ -42,6 +48,7 @@ Other files and directories will be present but are not needed for the present a
 - And finally the training data set was merged with the test data set.
 - The tidy data set with the average of each variable for each activity and each subject was then derived from the merged data set.
 
+***
 
 **Below follows a more detailed description of the merge operation:**
 - Read **subject_train** and **subject_test** data.
@@ -107,6 +114,7 @@ Other files and directories will be present but are not needed for the present a
 - Write resulting data frame to **tidyData.txt**.
   - write.table(tidyData, file="tidyData.txt", row.names=FALSE)
 
+***
 
 **In order to easily visualize tidyData.txt, it is suggested to follow the procedure described below:**
 - data <- read.table("tidyData.txt", header = TRUE)
@@ -114,12 +122,15 @@ Other files and directories will be present but are not needed for the present a
 
 Please consult run_analysis.R in this repository for the complete source code of the R script.
 
+***
+
 #### Choices made while treating/analyzing the data:
+
 - Only columns from the X_train and X_test data that contained **"std()"** and **"mean()"** in their column names were included.
 - The sorting and display order was chosen to be:
   - "activity" as first criteria.
   - "subject" as second criteria.
 - Column names were kept the same as in the original data, as they describe the values the way the original researchers/authors saw them fit.
 - The command **"cbind"** was preferred to **"merge"** so as not to risk a row order mutation before all data frames were merged.
-- Some optimizations could have been applied, but due to the lack of experience with R, the modest size of the data and a desire to keep the data manipulation script clear and understandable, a slower and slightly longer script was chosen.
-- The original feature columns included dashes is their names. No attempt was made to correct this.
+- Some optimizations could have been applied, but due to the lack of experience with R, the modest size of the data and a desire to keep the data manipulation script clear and understandable, a slower and longer script was chosen.
+- The original feature columns included dashes is their names and no attempt was made to correct/change them.
