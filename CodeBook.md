@@ -79,8 +79,9 @@ The following column names were kept from the original data source except for "a
 from the time or frequency domain.
 (2) Only column names containing "std()" and "mean()" have been kept, following the assignment requirements.
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+|            |Total       | Train      | Test       | Total      |
+| Content    |Columns     | Obs        | Obs        | Obs        |
+|:----------:|:----------:|:----------:|:----------:|:----------:|
+|subject     |1           | 7352       | 2947       | 10299      |
+|activity    |1           | 7352       | 2947       | 10299      |
+|features    |561         | 7352       | 2947       | 10299      |
