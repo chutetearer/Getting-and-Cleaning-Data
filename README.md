@@ -32,7 +32,18 @@ Other files and directories will be present but are not needed for the present a
 - Appropriately labels the data set with descriptive variable names. 
 - From the data set in the previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
+
 **A slightly different order has been applied here:**
+- Training and test data sets were kept separate for as long as possible.
+- Descriptive names for the activities were applied separately to both data sets before any merging with the feature data sets were done.
+- Subject and activity columns were cast to factors.
+- Feature data sets were treated apart. The column names were added to both data sets and subsequently the non-desired columns were removed from both data sets.
+- The training and test feature data sets were merged with the corresponding subject/activity data sets.
+- And finally the training data set was merged with the test data set.
+- The tidy data set with the average of each variable for each activity and each subject was then derived from the merged data set.
+
+
+**Below follows a more detailed description of the merge operation:**
 - Read **subject_train** and **subject_test** data.
   - train <- read.table("train/subject_train.txt")
   - test <- read.table("test/subject_test.txt")
@@ -96,6 +107,7 @@ Other files and directories will be present but are not needed for the present a
 - Write resulting data frame to **tidyData.txt**.
   - write.table(tidyData, file="tidyData.txt", row.names=FALSE)
 
+
 **In order to easily visualize tidyData.txt, it is suggested to follow the procedure described below:**
 - data <- read.table("tidyData.txt", header = TRUE)
 - View(data)
@@ -110,3 +122,4 @@ Please consult run_analysis.R in this repository for the complete source code of
 - Column names were kept the same as in the original data, as they describe the values the way the original researchers/authors saw them fit.
 - The command **"cbind"** was preferred to **"merge"** so as not to risk a row order mutation before all data frames were merged.
 - Some optimizations could have been applied, but due to the lack of experience with R, the modest size of the data and a desire to keep the data manipulation script clear and understandable, a slower and slightly longer script was chosen.
+- The original feature columns included dashes is their names. No attempt was made to correct this.
